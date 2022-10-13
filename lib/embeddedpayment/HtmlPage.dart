@@ -96,9 +96,8 @@ class HtmlPage extends State<MFPaymentCardView> {
   }
 
   String convertHTMLToURL(String html) {
-    return new Uri.dataFromString(
-        html,
-        mimeType: 'text/html',
-        encoding: Encoding.getByName('utf-8')).toString();
+    return new Uri.dataFromString(html,
+            mimeType: 'text/html', encoding: Encoding.getByName('utf-8'))
+        .toString();
   }
 }

@@ -1,4 +1,3 @@
-
 enum MFCountry {
   KUWAIT,
   SAUDI_ARABIA,
