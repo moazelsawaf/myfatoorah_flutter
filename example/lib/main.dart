@@ -240,7 +240,11 @@ class _MyHomePageState extends State<MyHomePage> {
     // You should call the "initiatePayment" API to can get this id and the ids of all other payment methods
     int paymentMethod = 1;
 
-    var request = new MFExecutePaymentRequest(paymentMethod, 0.100);
+    var request = new MFExecutePaymentRequest(
+      paymentMethodId: paymentMethod,
+      invoiceValue: 0.100,
+      customerName: 'Moaz El-sawaf',
+    );
 
     MFSDK.executePayment(context, request, MFAPILanguage.EN,
         onInvoiceCreated: (String invoiceId) =>
@@ -280,7 +284,11 @@ class _MyHomePageState extends State<MyHomePage> {
     // ids of all other payment methods
     int paymentMethod = 9;
 
-    var request = new MFExecutePaymentRequest(paymentMethod, 0.100);
+    var request = new MFExecutePaymentRequest(
+      paymentMethodId: paymentMethod,
+      invoiceValue: 0.100,
+      customerName: 'Moaz El-sawaf',
+    );
 
 //    var mfCardInfo = new MFCardInfo(cardToken: "Put your API token key here");
 
@@ -331,7 +339,11 @@ class _MyHomePageState extends State<MyHomePage> {
     // of all other payment methods
     int paymentMethod = 20;
 
-    var request = new MFExecutePaymentRequest(paymentMethod, 100.0);
+    var request = new MFExecutePaymentRequest(
+      paymentMethodId: paymentMethod,
+      invoiceValue: 0.100,
+      customerName: 'Moaz El-sawaf',
+    );
 
     var mfCardInfo = new MFCardInfo(
         cardNumber: "5453010000095539",

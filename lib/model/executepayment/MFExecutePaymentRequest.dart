@@ -26,9 +26,14 @@ class MFExecutePaymentRequest {
   List<Supplier>? suppliers;
   RecurringModel? recurringModel;
 
-  MFExecutePaymentRequest(int paymentMethodId, double invoiceValue) {
+  MFExecutePaymentRequest({
+    required int paymentMethodId,
+    required double invoiceValue,
+    required String customerName,
+  }) {
     this.paymentMethodId = paymentMethodId;
     this.invoiceValue = invoiceValue;
+    this.customerName = customerName;
   }
 
   MFExecutePaymentRequest.constructor(double invoiceValue) {
