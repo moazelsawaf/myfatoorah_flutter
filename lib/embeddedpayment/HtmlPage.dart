@@ -7,7 +7,6 @@ import 'package:myfatoorah_flutter/utils/ErrorsEnum.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import '../myfatoorah_flutter.dart';
-import 'MFPaymentCardView.dart';
 
 class HtmlPage extends State<MFPaymentCardView> {
   static int cardHeight = 230;

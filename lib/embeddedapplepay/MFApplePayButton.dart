@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:myfatoorah_flutter/model/executepayment/MFExecutePaymentRequest.dart';
-import 'package:myfatoorah_flutter/model/initsession/SDKInitSessionResponse.dart';
 
 import '../myfatoorah_flutter.dart';
 import 'MFApplePayButtonWebView.dart';

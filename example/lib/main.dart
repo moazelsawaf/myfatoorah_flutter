@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:myfatoorah_flutter/embeddedapplepay/MFApplePayButton.dart';
-import 'package:myfatoorah_flutter/model/initsession/MFInitiateSessionRequest.dart';
-import 'package:myfatoorah_flutter/model/initsession/SDKInitSessionResponse.dart';
 import 'package:myfatoorah_flutter/myfatoorah_flutter.dart';
 import 'package:myfatoorah_flutter/utils/MFCountry.dart';
 import 'package:myfatoorah_flutter/utils/MFEnvironment.dart';
@@ -485,39 +483,39 @@ class _MyHomePageState extends State<MyHomePage> {
                     padding: EdgeInsets.all(5.0),
                   ),
                   if (Platform.isIOS) createApplePayView(),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Pay (Embedded Payment)'),
                     onPressed: payWithEmbeddedPayment,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Send Payment'),
                     onPressed: sendPayment,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Initiate Payment'),
                     onPressed: initiatePayment,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Execute Regular Payment'),
                     onPressed: executeRegularPayment,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Execute Direct Payment'),
                     onPressed: executeDirectPayment,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Execute Direct Payment with Recurring'),
                     onPressed: executeDirectPaymentWithRecurring,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Cancel Recurring Payment'),
                     onPressed: cancelRecurringPayment,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Cancel Token'),
                     onPressed: cancelToken,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Get Payment Status'),
                     onPressed: getPaymentStatus,
                   ),
